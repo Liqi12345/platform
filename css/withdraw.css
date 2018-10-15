@@ -1,0 +1,71 @@
+.btm .nr {
+  padding: 0.5rem 0.34rem 0.5rem; }
+.btm .nr .card {
+  width: 100%;
+  height: 2.26rem;
+  background: url("../image/banks_03.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 0.3rem;
+  box-sizing: border-box; }
+.btm .nr .card .bankname {
+  font-size: 0.45rem;
+  color: #fff; }
+.btm .nr .card .nam {
+  color: #F7F7F7;
+  font-size: 0.26rem;
+  float: right; }
+.btm .nr .card div {
+  color: #F7F7F7;
+  font-size: 0.32rem;
+  text-align: center;
+  padding-top: 0.65rem; }
+.btm .nr .phone {
+  display: flex;
+  align-items: center;
+  padding-top: 0.45rem; }
+.btm .nr .phone img {
+  width: 0.18rem;
+  height: 0.3rem;
+  margin-right: 0.1rem; }
+.btm .nr .phone span {
+  font-size: 0.34rem;
+  color: #0291E6; }
+.btm .nr h3 {
+  font-size: 0.34rem;
+  color: #DFDFDF;
+  font-weight: 400;
+  padding: 0.6rem 0 0.22rem; }
+.btm .nr input {
+  padding-left: 0.4rem;
+  border: 2px solid #636572;
+  border-radius: 10px;
+  font-size: 0.3rem;
+  color: #fff;
+  height: 0.9rem;
+  width: 100%;
+  box-sizing: border-box; }
+.btm .nr .msg {
+  font-size: 0.26rem;
+  padding-top: 0.4rem;
+  color: #E40202;
+  text-align: center; }
+.btm .nr .msg2 {
+  font-size: 0.26rem;
+  color: #7E8089;
+  text-align: center;
+  padding: 0.05rem 0 0.8rem; }
+.btm .nr .btn {
+  width: 100%;
+  height: 0.8rem;
+  background: url("../image/button (2).png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.32rem;
+  color: #fff; }
+.btm .nr ::-webkit-input-placeholder {
+  color: #81818C;
+  font-size: 0.26rem; }
+
+/*# sourceMappingURL=withdraw.css.map */

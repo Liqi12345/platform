@@ -1,0 +1,28 @@
+.con{
+    padding: 0.34rem 0.34rem 0.56rem;
+    margin-top: 0.34rem;
+    background: #1B1B28;
+    box-sizing: border-box;
+    textarea{
+        border: 1px solid #5d5d65;
+        border-radius: 10px;
+        height: 3.14rem;
+        width: 100%;
+        font-size: 0.26rem;
+        color: #fff;
+        padding: 0.24rem;
+        box-sizing: border-box;
+        margin-bottom: 0.8rem;
+    }
+    .btn{
+        height: 0.8rem;
+        border-radius: 20px;
+        margin: 0 0.48rem;
+        background: #008AE3;
+        font-size: 0.32rem;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

@@ -1,0 +1,139 @@
+main{
+    height: calc(100% - 1.24rem);
+    .con{
+        padding: 0.34rem 0.34rem 0;
+        box-sizing: border-box;
+        .ct{
+            width: 100%;
+            height: 2.6rem;
+            background: #1B1B26;
+            border-radius:10px ;
+            padding: 0.5rem 0.34rem 0.34rem;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            >div{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                img{
+                    height: 0.6rem;
+                    width: 0.6rem;
+                }
+            }
+            .one{
+                flex: 1;
+                >div{
+                    font-size: 0.32rem;
+                    color: #0FB5F4;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    span{
+                        font-size: 0.24rem;
+                        color: #6C6C77;
+                    }
+                    h3{
+                        font-size: 0.6rem;
+                        color: #E2E3E5;
+                        font-weight: 200;
+                    }
+                    h5{
+                        font-size: 0.24rem;
+                        color: #EBB866;
+                        font-weight: 400;
+                    }
+                }
+                >div:first-child{
+                     margin-bottom: 0.3rem;
+                }
+            }
+        }
+        .mid{
+            width: 100%;
+            height: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >img:first-child{
+                width: 0.7rem;
+                height: 0.8rem;
+            }
+            >div{
+                border-radius:50% ;
+                background: #15151E;
+                width: 0.8rem;
+                height: 0.8rem;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                img{
+                    width: 0.45rem;
+                    height: 0.45rem;
+                }
+            }
+        }
+        .four{
+            margin-top: 0.48rem;
+            width: 100%;
+            height: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            input{
+                border: 2px solid #666666;
+                border-radius: 10px;
+                flex: 1;
+                height: 100%;
+                box-sizing: border-box;
+                font-size: 0.3rem;
+                color: #fff;
+                padding: 0 0.3rem;
+            }
+            >div{
+                width: 1.06rem;
+                height: 0.9rem;
+                background: #666666;
+                border-radius: 10px;
+                font-size: 0.3rem;
+                color: #B4B4BE;
+                line-height: 0.9rem;
+                text-align: center;
+                margin-left: -0.4rem;
+            }
+        }
+        .kynum{
+            padding:0.15rem 0 0.6rem ;
+            display: flex;
+            justify-content: space-between;
+            width: 2.2rem;
+            padding-left: 0.3rem;
+            
+            span{
+                font-size: 0.24rem;
+                color: #6C6C77;
+            }
+            h3{
+                font-size: 0.24rem;
+                color: #EBB866;
+                font-weight: 200;
+            }
+        }
+        .btn{
+            width: 100%;
+            height: 0.8rem;
+            background: url('../image/button (2).png') no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 0.32rem;
+            color: #fff;
+        }
+    }
+}

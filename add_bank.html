@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	 <link rel="stylesheet" href="css/swiper.min.css">
+	 <link rel="stylesheet" href="css/base.css">
+	 <link rel="stylesheet" href="css/add_bank.css">
+	 <script src="js/rem.js"></script>
+	 <script src="js/swiper.min.js"></script>
+	 <script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="javascript:history.back()">
+			<img src="image/xz@3x.png" alt="">
+		</a>
+		<span>添加银行卡</span>
+		<span></span>
+	</header>
+	<main>
+		
+	<div class="con">
+		<div>
+			<input type="text" placeholder="请输入您的银行" />
+		</div>
+		<div>
+			<input type="text" placeholder="请输入您的银行分行信息" />
+		</div>
+		<div>
+			<input type="text" placeholder="请输入您的账户姓名" />
+		</div>
+		<div>
+			<input type="text" placeholder="请输入您的银行账户" />
+		</div>
+		<div>
+			<input type="text" placeholder="备注" />
+		</div>
+		<button class="btn">添加银行卡</button>
+	</div>
+	
+	</main>
+</body>
+</html>
+<script>
+
+window.addEventListener('resize', function () {
+            // alert(1)
+//          if ($('body').innerHeight() < 550) {
+//              $('footer').hide();
+//              $('main').css('height', 'calc(100% - 1.24rem)')
+//              console.log($('footer'))
+//          } else {
+//              $('footer').show();
+//              $('main').css('height', 'calc(100% - 2.24rem)')
+//          }
+            if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+                document.activeElement.scrollIntoView({ behavior: "smooth" })
+            }
+        })
+
+</script>

@@ -1,0 +1,5 @@
+main { height: calc(100% - 1.24rem); }
+main .con { overflow-y: auto; height: 100%; padding: 0.5rem; box-sizing: border-box; }
+main .con p { width: 100%; font-size: 0.26rem; color: #DADADA; word-break: break-all; line-height: 0.45rem; padding-bottom: 0.5rem; }
+
+/*# sourceMappingURL=discount_details.css.map */

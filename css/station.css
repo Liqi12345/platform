@@ -1,0 +1,21 @@
+main { height: calc(100% - 1.24rem); }
+main .con { height: 100%; box-sizing: border-box; }
+main .con .nrs { overflow-y: auto; height: calc(100% - 3.4rem); width: 100%; padding: 0.3rem 0.34rem; box-sizing: border-box; }
+main .con .nrs > div { display: flex; margin-bottom: 0.6rem; }
+main .con .nrs > div img { width: 0.93rem; height: 0.93rem; }
+main .con .nrs > div .contents { word-break: break-all; position: relative; width: 5.6rem; height: auto; padding: 0.1rem 0.34rem 0; box-sizing: border-box; min-height: 1.44rem; border-radius: 10px; background: #1B1B26; }
+main .con .nrs > div .contents .tim { font-size: 0.24rem; color: #919191; }
+main .con .nrs > div .contents > div { font-size: 0.3rem; color: #DADADA; }
+main .con .nrs .web .contents { background: #1B1B26; text-align: left; }
+main .con .nrs .web img { margin-right: 0.3rem; }
+main .con .nrs .self img { margin-left: 0.3rem; }
+main .con .nrs .web .contents::after { content: ''; width: 0; height: 0; border-width: 0.12rem; border-style: solid; border-color: transparent #1B1B26 transparent transparent; position: absolute; left: -0.24rem; top: -0.5rem; bottom: 0; margin: auto; }
+main .con .nrs .self .contents { background: #2E3149; }
+main .con .nrs .self .tim { text-align: right; }
+main .con .nrs .self .contents::after { content: ''; width: 0; height: 0; border-width: 0.12rem; border-style: solid; border-color: transparent  transparent transparent #2E3149; position: absolute; right: -0.24rem; top: -0.5rem; bottom: 0; margin: auto; }
+main .con .nrs::-webkit-scrollbar { display: none; }
+main .con .kuang { height: 3.4rem; width: 100%; padding: 0 0.48rem; box-sizing: border-box; }
+main .con .kuang textarea { border: 1px solid #5d5d65; border-radius: 3px; width: 100%; height: 1.8rem; font-size: 0.3rem; color: #DADADA; padding: 0.2rem 0.3rem; box-sizing: border-box; }
+main .con .kuang .btn { width: 100%; margin-top: 0.32rem; height: 0.8rem; background: #008AE3; display: flex; justify-content: space-around; align-items: center; font-size: 0.32rem; color: #fff; border-radius: 20px; }
+
+/*# sourceMappingURL=station.css.map */

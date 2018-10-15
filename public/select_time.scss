@@ -1,0 +1,101 @@
+@mixin h3_title{
+     height: 1.44rem;
+            font-size: 0.32rem;
+            color: #9A9AA2;
+            line-height: 1.44rem;
+            font-weight: 400;
+}
+@mixin box_siz($h,$w){
+    padding:$h $w;
+    box-sizing: border-box;
+}
+main{
+    height: calc(100% - 1.25rem);
+}
+.con{
+    .time{
+       @include box_siz(0,0.32rem);
+        h3{
+            @include  h3_title;
+        }
+        .week{
+            border-radius: 10px;
+            background: #161621;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 0.86rem;
+            line-height: 0.86rem;
+            font-weight: 400;
+            span{
+                   font-size: 0.24rem;
+                   color: #9A9AA2;
+                   width: 25%;
+                   text-align: center;
+            }
+            .week_active{
+                height: 1.1rem;
+                background: #232330;
+                border-radius: 10px;
+                border:1px solid #191824;
+                line-height: 1.1rem;
+                color: #fff;
+                font-size:0.25rem;
+            }
+        }
+        .days{
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 1.52rem;
+            margin-top: 0.6rem;
+            background: #161621;
+            font-size: 0.32rem;
+            padding:0 0.25rem;
+            box-sizing: border-box;
+            .iDate{
+                color: #C4C4C7;
+                font-size: 0.32rem;
+            }
+            .iDate:first-child{
+                flex:1;
+            }
+            .iDate:last-of-type{
+               width: 40%;
+            }
+            img{
+                width: 0.18rem;
+                height: 0.31rem;
+            }
+           
+        }
+    }
+    .select{
+         @include box_siz(0,0.32rem);
+        h3{
+            @include  h3_title;
+        }
+        .select_box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .button{
+                width: 2.1rem;
+                height: 1.26rem;
+                border-radius: 10px;
+                background: #1B1B28;
+                font-size: 0.32rem;
+                color: #94959D;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border: 2px solid transparent;
+            }
+            .btn_active{
+                border: 2px solid #5ecaed;
+            }
+        }
+        
+    }
+}

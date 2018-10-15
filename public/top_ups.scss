@@ -1,0 +1,191 @@
+@mixin box_siz($h,$w){
+    padding:$h $w;
+    box-sizing: border-box;
+}
+main{
+    height: calc(100% - 1.25rem);
+}
+.con{
+    .select_type{
+    margin-bottom: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.26rem;
+    background: #2B2D3D;
+    @include box_siz(0.28rem,0.42rem);
+        a{
+            display: flex;
+            justify-content: space-between;
+            width: 1.75rem;
+            height:100%;
+            border-radius: 10px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: flex-start;
+             padding-top:0.4rem;
+            box-sizing: border-box;
+            span{
+                font-size: 0.26rem;
+                color: #ADACB2;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .type_active{
+             background: #1F212F;
+        }
+    }
+    .select_bank{
+        height: 1.26rem;
+        margin: 0 0.3rem 0.4rem;
+        @include box_siz(0,0.3rem);
+        background: #2B2D3D;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 2.5rem;
+            height: 0.8rem;
+        }
+        .se_bank{
+            width: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                font-size: 0.26rem;
+                color: #81818C;
+            }
+            img{
+                width: 0.24rem;
+                height: 0.28rem;
+            }
+        }
+    }
+    .deposits{
+        @include box_siz(0,0.34rem);
+        input{
+            width: 100%;
+            height: 0.92rem;
+            border-radius: 10px;
+            padding-left: 0.4rem;
+            color: #81818C;
+            font-size: 0.26rem;
+            box-sizing: border-box;
+            border: 2px solid #636572;
+            margin-bottom: 0.72rem;
+        };
+        .week{
+            border-radius: 10px;
+            background: #222434;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 0.94rem;
+            line-height: 0.86rem;
+            font-weight: 400;
+            span{
+                   font-size: 0.26rem;
+                   color: #81818C;
+                   width: 25%;
+                   text-align: center;
+            }
+            .week_active{
+                height: 1.16rem;
+                background: #232330;
+                border-radius: 10px;
+                border:1px solid #191824;
+                line-height: 1.16rem;
+                color: #fff;
+                font-size:0.26rem;
+            }
+        }
+        p{  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 1.5rem;
+            color: #81818C;
+            font-size: 0.2rem;
+        }
+        #btnSubmit{
+            height: 0.8rem;
+            width: 100%;
+            background: url(../image/button.png);
+            background-size: 100% 100%;
+            font-size: 0.32rem;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+
+}
+.con .togs:nth-child(2){
+    display: block;
+}
+.togs{
+    display: none;
+}
+
+
+@mixin flexs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin box_siz($h,$w){
+    padding:$h $w;
+    box-sizing: border-box;
+}
+.masks_bank{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #171722;
+    transition: all .3s;
+    z-index: 99999;
+}
+.mask_con{
+    width: 100%;
+    position: relative;
+    background: #1f212f;
+    background-size: 100% 100%;
+    height: calc(100% - 1.25rem);
+    overflow-y: auto;
+    overflow: hidden;
+    .type{
+        @include box_siz(0.46rem,0.34rem);
+        li{
+            height: 1rem;
+            @include box_siz(0,0.32rem);
+            @include flexs;
+            background: #26293B;
+            border-radius: 3px;
+            margin-bottom: 0.18rem;
+            img{
+                width: 0.52rem;
+                height: 0.52rem;
+                margin-right: 0.28rem;
+            }
+            span{
+                font-size: 0.26rem;
+                color: #5D5D65;
+            }
+        }
+    }
+}
+
+

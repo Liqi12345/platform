@@ -1,0 +1,34 @@
+@mixin flexs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin box_siz($h,$w){
+    padding:$h $w;
+    box-sizing: border-box;
+}
+main{
+    height: calc(100% - 1.25rem);
+}
+.con{
+    .type{
+        @include box_siz(0.46rem,0.34rem);
+        li{
+            height: 1rem;
+            @include box_siz(0,0.32rem);
+            @include flexs;
+            background: #26293B;
+            border-radius: 3px;
+            margin-bottom: 0.18rem;
+            img{
+                width: 0.52rem;
+                height: 0.52rem;
+                margin-right: 0.28rem;
+            }
+            span{
+                font-size: 0.26rem;
+                color: #5D5D65;
+            }
+        }
+    }
+}

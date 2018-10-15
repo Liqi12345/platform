@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	 <link rel="stylesheet" href="css/styles.css">
+	 <link rel="stylesheet" href="css/base.css">
+	 <link rel="stylesheet" href="css/select_time.css">
+	 <script src="js/rem.js"></script>
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/moment.js"></script>
+	 <script src="js/bootstrap-datetimepicker.js"></script>
+	 
+</head>
+<body>
+	<header>
+		<a href="javascript:history.back()">
+			<img src="image/xz@3x.png" alt="">
+		</a>
+		<span>选择查询时间段</span>
+		<span>完成</span>
+	</header>
+	<main>
+		<div class="con">
+			<div class="time">
+				<h3>时间</h3>
+				<div class="week">
+					<span class="week_active">今天</span>
+					<span>昨天</span>
+					<span>近三天</span>
+					<span>近七天</span>
+					
+				</div>
+				<div class="days">
+					<div class="iDate date">
+						<input type="text" value="" />
+						 <button type="button" class="addOn"></button>
+					</div>
+					<div class="iDate date">
+						<input type="text" value="" />
+						 <button type="button" class="addOn"></button>
+					<img src="image/xy.png" class="addOn" alt="" />
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	
+	
+	</main>
+</body>
+</html>
+<script>
+	$('.week span').click(function(){
+		$(this).addClass('week_active').siblings().removeClass('week_active')
+	})
+	$('.select_box .button').click(function(){
+		$(this).toggleClass('btn_active')
+	})
+	
+	$(document).ready(function(){
+	    if($(".iDate.date").length>0){
+	        $(".iDate.date").datetimepicker({
+	            locale:"zh-cn",
+	            format:"YYYY-MM-DD",
+	            dayViewHeaderFormat:"YYYY年 MMMM"
+	        });
+	    }
+	})
+</script>

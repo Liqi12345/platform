@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	 <link rel="stylesheet" href="css/swiper.min.css">
+	 <link rel="stylesheet" href="css/base.css">
+	 <link rel="stylesheet" href="css/select_language.css">
+	 <script src="js/rem.js"></script>
+	 <script src="js/swiper.min.js"></script>
+	 <script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="javascript:history.back()">
+			<img src="image/xz@3x.png" alt="">
+		</a>
+		<span>语言选择</span>
+		<span></span>
+	</header>
+	<main>
+		
+	<div class="con">
+		<div><img src="image/zh-CN.png" alt="" /><span>简体中文</span></div>
+		<div><img src="image/zh-CN.png" alt="" /><span>繁体中文</span></div>
+		<div><img src="image/en-US.png" alt="" /><span>English</span></div>
+	</div>
+	
+	</main>
+	
+</body>
+</html>
+<script>
+	$(function(){
+		$('.con div').click(function(){
+			var texts =  encodeURI( $(this).children('span').text())
+			window.location.href ='account.html?language='+ texts;
+		})
+	})
+</script>

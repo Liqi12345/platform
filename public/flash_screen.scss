@@ -1,0 +1,58 @@
+main{
+    background: url('../image/background (2).jpg') no-repeat;
+    background-size:100% 100% ;
+    height:100%;
+    padding:2.48rem 0.32rem  0 ;
+    box-sizing: border-box;
+    .con{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 2.3rem;
+            height: 3.65rem;
+            margin: 0 auto;
+        }
+        .btm{
+            position: absolute;
+            bottom: 0;
+            height: 3.2rem;
+            width: 100%;
+            .div1{
+                height: 0.96rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+                a{
+                    display: block;
+                    width: 48%;
+                    height: 100%;
+                    border-radius: 24px;
+                    background: #008AE3;
+                    font-size: 0.32rem;
+                    color: #fff;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+            .kf{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 1.4rem;
+                margin: 0 auto;
+                img{
+                    width: 0.26rem;
+                    height: 0.26rem;
+                    
+                }
+                span{
+                    font-size: 0.26rem;
+                    color: #3EC1FE;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI,GACA,MAAM,EAAE,oBAAoB;AAExB,wEAA8C,GAC1C,UAAU,EAAE,iBAAiB;AAGjC,uBAAe,GACX,UAAU,EAAE,YAAY",
+"sources": ["../public/personal.scss"],
+"names": [],
+"file": "personal.css"
+}

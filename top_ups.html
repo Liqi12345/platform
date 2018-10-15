@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	 <link rel="stylesheet" href="css/swiper.min.css">
+	 <link rel="stylesheet" href="css/base.css">
+	 <link rel="stylesheet" href="css/top_ups.css">
+	 <script src="js/rem.js"></script>
+	 <script src="js/swiper.min.js"></script>
+	 <script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="javascript:history.back()">
+			<img src="image/xz@3x.png" alt="">
+		</a>
+		
+		<span>充值</span>
+		<span></span>
+	</header>
+	<main>
+		<div class="con">
+			<div class="select_type swiper-container ">
+				<div class="swiper-wrapper">
+					<!--1-->
+					<a href="#" class="type_active swiper-slide">
+						<img src="image/wxzf.png" style="width:0.72rem" alt="" />
+						<span>微信支付</span>
+					</a>
+					<!--2-->
+					<a href="#" class="swiper-slide">
+						<img src="image/zfb@3x.png" style="width:0.72rem"  alt="" />
+						<span>支付宝支付</span>
+					</a>
+					<!--3-->
+					<a href="#" class="swiper-slide">
+						<img src="image/yl.png" style="width:0.76rem" alt="" />
+						<span>在线网银</span>
+					</a>
+				</div>
+				
+			</div>
+			<!--1-->
+			<div class="togs">
+				<div class="deposits">
+					<input type="text" placeholder="请输入您要充值的金额" />
+					<div class="week">
+						<span class="week_active">100</span>
+						<span>500</span>
+						<span>1,000</span>
+						<span>5,000</span>
+					</div>
+					<p>单笔存款最低￥500.00，上限<span style="color: #FFAE01;font-size: 0.2rem;">￥3,500.00</span></p>
+					<div id="btnSubmit">充值</div>
+				</div>
+			</div>
+			<!--2-->
+			<div class="togs">
+				<div class="deposits">
+					<input type="text" placeholder="请输入您要充值的金额" />
+					<div class="week">
+						<span class="week_active">100</span>
+						<span>500</span>
+						<span>1,000</span>
+						<span>5,000</span>
+					</div>
+					<p>单笔存款最低￥500.00，上限<span style="color: #FFAE01;font-size: 0.2rem;">￥3,500.00</span></p>
+					<div id="btnSubmit">充值</div>
+				</div>
+			</div>
+			<!--3-->
+			<div class="togs">
+				<div class="select_bank">
+					<img class="logo" src="image/logo.png" alt="" />
+					<div class="se_bank">
+						<span>选择银行</span>
+						<img src="image/you.png" alt="" />
+					</div>
+				</div>
+				<div class="deposits">
+					<input type="text" placeholder="请输入您要充值的金额" />
+					<div class="week">
+						<span class="week_active">100</span>
+						<span>500</span>
+						<span>1,000</span>
+						<span>5,000</span>
+					</div>
+					<p>单笔存款最低￥500.00，上限<span style="color: #FFAE01;font-size: 0.2rem;">￥3,500.00</span></p>
+					<div id="btnSubmit">充值</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="masks_bank">
+		<header>
+			<a href="#" class="head_a">
+				<img src="image/xz@3x.png" alt="">
+			</a>
+			<span>选择银行</span>
+			<span></span>
+		</header>
+	
+		<div class="mask_con">
+			<ul class="type">
+				<li>
+					<img src="image/nongye.png" alt="" />
+					<span>中国农业银行</span>
+				</li>
+				<li>
+					<img src="image/zhongguo.png" alt="" />
+					<span>中国银行</span>
+				</li>
+				<li>
+					<img src="image/jianshe.png" alt="" />
+					<span>中国建设银行</span>
+				</li>
+				<li>
+					<img src="image/youzheng.png" alt="" />
+					<span>邮政储蓄银行</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	/////////////轮播二//////////////
+
+        var swp2 = $('.swiper-container');
+        var swiper2 = new Swiper(swp2, {
+            slidesPerView: 3,
+            spaceBetween:35,
+        });
+
+    function toggle(cla,act){
+    	cla.click(function(){
+    		if(this.nodeName == 'A'){
+    			var a = $(this).index();
+    			$('.togs').eq(a).show().siblings('.togs').hide();
+    		}
+			$(this).addClass(act).siblings().removeClass(act);
+		})
+    }
+	toggle($('.select_type a'),'type_active')
+	toggle($('.week span'),'week_active')
+	
+	//选择后关闭
+	$('.se_bank').click(function(){
+		$('.masks_bank').css('height','100%')
+		$('.head_a,.type li').click(function(){
+			$('.masks_bank').css('height','0')
+		})
+	})
+	
+</script>

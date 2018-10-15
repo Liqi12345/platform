@@ -1,0 +1,5 @@
+main { height: calc(100% - 1.24rem); }
+main ul li:first-child, main ul li:nth-child(3), main ul li:nth-child(5) { margin-top: 0.3rem !important; }
+main ul li:nth-child(4) { margin-top: 0 !important; }
+
+/*# sourceMappingURL=personal.css.map */

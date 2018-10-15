@@ -1,0 +1,5 @@
+.con div { display: flex; justify-content: space-between; }
+.con div input { flex: 1; }
+.con div img { width: 0.37rem; height: 0.25rem; padding: 0.1rem 0.1rem 0 0; }
+
+/*# sourceMappingURL=set_pass.css.map */

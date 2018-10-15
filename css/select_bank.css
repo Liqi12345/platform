@@ -1,0 +1,8 @@
+main { height: calc(100% - 1.25rem); }
+
+.con .type { padding: 0.46rem 0.34rem; box-sizing: border-box; }
+.con .type li { height: 1rem; padding: 0 0.32rem; box-sizing: border-box; display: flex; justify-content: flex-start; align-items: center; background: #26293B; border-radius: 3px; margin-bottom: 0.18rem; }
+.con .type li img { width: 0.52rem; height: 0.52rem; margin-right: 0.28rem; }
+.con .type li span { font-size: 0.26rem; color: #5D5D65; }
+
+/*# sourceMappingURL=select_bank.css.map */

@@ -1,0 +1,14 @@
+main { background: url(../image/bg2.jpg) no-repeat; background-size: 100% 100%; height: calc(100% - 1.24rem); }
+main .con { margin: 2.8rem 0.45rem 0; height: 6rem; }
+main .con .inp { padding: 0.14rem 0; box-sizing: border-box; border-bottom: 1px solid #c7c7c7; }
+main .con .inp span { height: 0.4rem; display: block; }
+main .con .inp div { display: flex; justify-content: space-between; }
+main .con .inp input { font-size: 0.32rem; }
+main .con .inp ::-webkit-input-placeholder { color: #AFAFAF; font-size: 0.32rem; }
+main .con .inp img { width: 0.37rem; height: 0.25rem; padding: 0.1rem 0.1rem 0 0; }
+main .con .btn { margin: 0.8rem 0 0.5rem; width: 100%; height: 0.8rem; background: url("../image/button (2).png") no-repeat; background-size: 100% 100%; display: flex; justify-content: space-around; align-items: center; font-size: 0.32rem; color: #fff; }
+main .con .find { font-size: 0.24rem; color: #3EC1FE; display: block; text-align: center; }
+main .con .hots { border-bottom: 1px solid #008AE3; }
+main .con .act { font-size: 0.22rem; color: #008AE3; }
+
+/*# sourceMappingURL=login.css.map */

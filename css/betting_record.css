@@ -1,0 +1,12 @@
+main { height: calc(100% - 1.24rem); }
+main .con { height: 100%; box-sizing: border-box; }
+main .con .nr { height: 100%; width: 100%; overflow-y: auto; box-sizing: border-box; }
+main .con .nr > div { width: auto; height: 3.12rem; background: #1B1B26; border-radius: 10px; margin: 0 0.34rem 0.4rem; padding: 0.28rem 0.34rem; box-sizing: border-box; display: flex; justify-content: space-between; }
+main .con .nr > div .lef { height: 100%; display: flex; align-items: center; align-content: space-between; flex-wrap: wrap; width: 2.2rem; }
+main .con .nr > div .lef > div { width: 100%; }
+main .con .nr > div .lef > div > div:first-child { margin-bottom: 0.15rem; }
+main .con .nr > div .lef > div div { text-align: center; font-size: 0.22rem; color: #6C6C77; }
+main .con .nr > div .lef > div:nth-child(2) div:nth-child(2) { color: #fff; font-size: 0.26rem; }
+main .con .nr > div .lef:last-child { width: 2.5rem !important; }
+
+/*# sourceMappingURL=betting_record.css.map */

@@ -1,0 +1,14 @@
+main .swiper-container { width: 100%; height: 0.94rem; box-sizing: border-box; }
+main .yh_ul { display: flex; justify-content: space-between; width: 100%; height: 100%; }
+main .yh_ul li { font-size: 0.24rem; color: #b7b7b7; display: flex; justify-content: space-around; align-items: center; }
+main .yh_ul .yh_active { color: #04A7D8; }
+main .yh_ul .yh_active::after { content: ''; background: url(../image/yh_03.png); position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto; width: 0.54rem; height: 0.12rem; background-size: cover; }
+main .con { width: 100%; height: calc(100% - 0.94rem); overflow-y: auto; }
+main .con .yh_1 { width: 100%; height: auto; background: #000000; }
+main .con .yh_1 img { width: 100%; height: 3.34rem; }
+main .con .yh_1 .title { width: 100%; padding: 0.15rem 0.1rem; box-sizing: border-box; }
+main .con .yh_1 .title h5 { font-size: 0.24rem; color: #acacac; font-weight: 400; }
+main .con .yh_1 .title span { font-size: 0.24rem; color: #acacac; }
+main .con::-webkit-scrollbar { display: none; }
+
+/*# sourceMappingURL=discount.css.map */

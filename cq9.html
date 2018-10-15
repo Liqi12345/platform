@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	 <link rel="stylesheet" href="css/swiper.min.css">
+	 <link rel="stylesheet" href="css/base.css">
+	 <link rel="stylesheet" href="css/cq9.css">
+	 <script src="js/rem.js"></script>
+	 <script src="js/swiper.min.js"></script>
+	 <script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="javascript:history.back()">
+			<img src="image/xz@3x.png" alt="">
+		</a>
+		<span>CQ9电子</span>
+		<span></span>
+	</header>
+	<main>
+		<div class="con">
+			<div class="cq_search">
+				<span>全部游戏</span>
+				<img src="image/sjx.png" alt="" />
+			</div>
+			<div class="cq_list">
+				<span>棋盘</span>
+				<span>全部游戏</span>
+				<span>彩金游戏</span>
+				<span>电子游戏</span>
+				<span>老虎机</span>
+			</div>
+			<div class="cq_nr">
+				<div class="res1">
+					<div>
+						<img src="image/search.png" alt="" class="sear" />
+						<input type="text" class="cq_inp" placeholder="搜索" />
+						<img src="image/closes.png" alt="" class="clos" />
+					</div>
+					<span class="cancel">取消</span>
+				</div>
+				<div class="result">
+					<div class="aa"></div>
+					<div class="bb">
+						<div>
+						<img src="image/game.png" alt="" />
+						<span>钻石水果王</span>
+						<img src="image/play.png" alt="" />
+					</div>
+					<div>
+						<img src="image/game.png" alt="" />
+						<span>唉石水果王</span>
+						<img src="image/play.png" alt="" />
+					</div>
+					<div>
+						<img src="image/game.png" alt="" />
+						<span>老板石水果王</span>
+						<img src="image/play.png" alt="" />
+					</div>
+					<div>
+						<img src="image/game.png" alt="" />
+						<span>钻石水果王</span>
+						<img src="image/play.png" alt="" />
+					</div>
+					<div>
+						<img src="image/game.png" alt="" />
+						<span>话</span>
+						<img src="image/play.png" alt="" />
+					</div>
+					<div>
+						<img src="image/game.png" alt="" />
+						<span>钻石水果王</span>
+						<img src="image/play.png" alt="" />
+					</div>
+					<div>
+						<img src="image/game.png" alt="" />
+						<span>z石水果王</span>
+						<img src="image/play.png" alt="" />
+					</div>
+					<div>
+						<img src="image/game.png" alt="" />
+						<span>F石水果王</span>
+						<img src="image/play.png" alt="" />
+					</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+	
+	</main>
+</body>
+</html>
+<script>
+$(function(){
+	var arr = [],arr1 = [],arr2 = [];
+	//存游戏名字
+	$('.result span').each((i,e)=>{
+		arr.push($(e).text())
+	})
+	
+	
+	$('.cq_inp').on('input',function(){
+		$('.clos').show();
+		$('.cancel').show();
+		var a = $(this).val().trim();
+		//删除
+		$('.clos').click(function(){
+			$('.cq_inp').val('')
+			a = ''
+//			$('.result > .bb').show()
+			$('.result > .aa > div').remove()
+		})
+		var c = '';
+		$('.result > .bb').hide()
+		for(var i = 0;i < arr.length;i++){
+			var b = arr[i];
+			if(b.indexOf(a) >= 0 && a){
+				if(arr1.indexOf(i) == -1){
+					arr1.push(i)
+				}
+				
+				var str = '';
+				for(var j = 0;j < arr1.length;j++){
+					var q = arr1[j];
+					//console.log(arr[q])
+					str +=
+						`
+						<div>
+							<img src="image/game.png" alt="" />
+							<span>${arr[q]}</span>
+							<img src="image/play.png" alt="" />
+						</div>
+						`
+					$('.result .aa').html(str)	
+				}
+			}else if(!a){
+		
+				arr1 = [];
+				$('.result > .aa > div').remove()
+				
+			}
+		}
+	})
+	//取消
+	$('.cancel').click(function(){
+		$('.result > .bb').show()
+		$('.result > .aa > div').remove()
+		$(this).hide();
+		$('.clos').hide();
+		$('.cq_inp').val('')
+		$('.cq_inp').attr('placeholder','搜索')
+		
+	})
+	
+	$('.cq_search').click(function(){
+		$('.cq_list').slideDown()
+		$('.cq_list span').click(function(){
+			$('.cq_list').slideUp()
+			$('.cq_search > span').text($(this).text())
+		})
+	})
+	
+})
+</script>
+

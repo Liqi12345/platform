@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	 <link rel="stylesheet" href="css/swiper.min.css">
+	 <link rel="stylesheet" href="css/base.css">
+	 <link rel="stylesheet" href="css/write_letter.css">
+	 <script src="js/rem.js"></script>
+	 <script src="js/swiper.min.js"></script>
+	 <script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="javascript:history.back()">
+			<img src="image/xz@3x.png" alt="">
+		</a>
+		<span>写信</span>
+		<span></span>
+	</header>
+	<main>
+		
+	
+	<div class="con">
+		<div class="tit">问题类型</div>
+		<div class="list">
+			<div>提款问题</div>
+			<div>充值问题</div>
+			<div>问题建议</div>
+		</div>
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+		<div class="btn">提交</div>
+	</div>
+	</main>
+</body>
+</html>
+<script>
+	$('.list div').click(function(){
+		$(this).css('color','#fff').siblings().css('color','#9A9AA2')
+	})
+</script>
